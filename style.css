@@ -1,0 +1,102 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-size: 15px;
+    font-family: "Poppins";
+}
+
+.container{
+    margin: 50px 70px;
+    text-align: center;
+}
+
+.text-content{
+    margin: 0 auto;
+    width: 500px;
+}
+
+.first-p{
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.second-p{
+    margin-top: -20px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.components{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+}
+
+.comp{
+    width: auto;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0 50px 0 30px;
+    box-shadow: 10px 10px 5px 2px rgba(234, 231, 234, 0.5);
+}
+
+.builder-karma{
+    margin: 20px;
+}
+
+.builder{
+    margin-bottom: 20px;
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.supervisor{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.karma{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calculator{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+svg{
+    margin: 40px 0 20px 230px;
+}
+
+@media (max-width: 375px) {
+    .container{
+        margin: 30px 85px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .components{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .text-content{
+        width: 100%;
+    }
+    .comp{
+        width: auto;
+        height: auto;
+    }
+    .builder-karma{
+        margin: 0;
+    }
+    svg{
+        width: 60%;
+        margin: 20px 0 10px 150px;
+    }
+    .builder, .calculator{
+        margin-top: 20px;
+    }
+}
